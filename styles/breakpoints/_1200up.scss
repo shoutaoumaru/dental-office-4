@@ -1,0 +1,174 @@
+/******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+.contents-title {
+  font-size: 36px;
+}
+
+.contents-subtitle {
+  font-size: 24px;
+}
+
+
+.c-container {
+  padding: 0 12vw;
+}
+
+//.p-header 
+.p-header {
+  & .logo__img {
+    margin: 31px 20px 0 80px;
+  }
+
+  & .pc-nav {
+    margin-right: 3vw;
+
+    & .pc-nav-item {
+      padding-top: 3.5vw;
+    }
+  }
+}
+
+
+//.p-news
+.p-news {
+  padding: 5vw 0;
+
+  &__item {
+    & a {
+      padding: 3vw 6vw;
+    }
+  }
+}
+
+//.p-recruite 
+.p-recruit {
+  &__right {
+    top: 70%;
+    right: 8%;
+    height: 220px;
+  }
+}
+
+//.p-access
+.p-access {
+  padding: 5vw 0;
+
+  & .c-container {
+    padding: 0 8vw;
+  }
+
+  &__time {
+    margin-top: 7vw;
+
+    & table {
+      & .close {
+        &::before {
+          width: 8.2vw;
+          transform: rotate(-43deg);
+        }
+      }
+
+      & td {
+        padding: 2.3vw 2.7vw;
+      }
+    }
+  }
+
+  &__g-map {
+    font-size: 1rem;
+    padding-left: 30px;
+
+    &::before {
+      top: 4px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+//.p-footer
+.p-footer {
+  padding: 5vw 0;
+}
+
+// * * * * * * * * * about-page * * * * * * 
+.about-contents {
+  padding-top: 100px;
+}
+
+// * * * * * * * * * clinic-page * * * * * * 
+.clinic-content {
+  padding-top: 100px;
+
+  .clinic-director {
+    &__img {
+      margin-left: 12vw;
+    }
+  }
+
+  .clinic-equipment {
+    &-list {
+      &__img {
+        height: 200px;
+      }
+    }
+  }
+
+  .c-bg-grey02 {
+    &::before {
+      top: 0;
+      margin: 0 10vw;
+      width: 79.2%;
+    }
+  }
+}
+
+// * * * * * * * * * menu-page * * * * * * 
+.menu-contents {
+  padding-top: 100px;
+
+  .menu-about-sec {
+    margin-top: 7vw;
+
+    &__subtitle {
+      font-size: 30px;
+    }
+  }
+}
+
+// * * * * * * * * * faq-page * * * * * * 
+.faq-contents {
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+
+  & .faq {
+    margin: 20vw 0 10vw 0;
+
+    & .c-txtarea01 {
+      margin-bottom: 10vw;
+
+      & .c-txt-sm {
+        font-size: 20px;
+      }
+    }
+
+    & dt {
+      padding: 2.6vw 0 3.5vw 0;
+
+      &::before {
+        font-size: 32px;
+      }
+    }
+
+    & dd {
+      &::before {
+        font-size: 34px;
+      }
+    }
+  }
+}

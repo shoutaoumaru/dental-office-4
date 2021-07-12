@@ -1,0 +1,566 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.c-txt-md {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cBlack;
+}
+
+.c-txt-sm {
+  font-size: .8rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cBlack;
+}
+
+.c-txt-xs {
+  font-size: .7rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cBlack;
+}
+
+.title {
+  margin: 4vw 0;
+}
+
+.c-container {
+  padding: 0 2vw;
+}
+
+.c-head01 {
+  font-size: 3.5rem;
+}
+
+.c-sub-head01 {
+  font-size: 1.2rem;
+}
+
+//.p-header
+.p-header {
+  & .logo__img {
+    margin: 20px 20px 0 30px;
+
+    & .logo {
+      width: 120px;
+    }
+  }
+
+  & .mobile-button {
+    top: 30px;
+    right: 30px;
+  }
+
+  & .mobile-container {
+    height: 78px;
+  }
+}
+
+//.p-policy
+.p-policy {
+  margin-top: 10vw;
+
+  &__img {
+    width: 47%;
+    height: 400px;
+    margin: 10vw 0 0 0;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-container {
+    position: relative;
+    width: 48%;
+    padding-right: 5vw;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: '';
+      display: block;
+      background-color: rgb(250, 248, 248);
+      height: 110%;
+      width: 60vw;
+      z-index: -1;
+    }
+  }
+}
+
+//.p-message
+.p-message {
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  &__img {
+    margin: 0;
+    width: 55%;
+    height: 400px;
+  }
+
+  &-container {
+    position: relative;
+    width: 48%;
+    padding-left: 5vw;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+      background-color: rgb(250, 248, 248);
+      height: 110%;
+      width: 60vw;
+      z-index: -1;
+    }
+  }
+}
+
+//.p-promise
+.p-promise {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      width: 32%;
+    }
+
+    &__txtarea {
+      height: 80px;
+      margin-top: -6px;
+      font-size: .9rem;
+    }
+  }
+
+}
+
+//.p-guidance
+.p-guidance {
+  &__item {
+    width: 25%;
+  }
+
+  &__list {
+    width: 60%;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .c-btn01 {
+    width: 30%;
+
+    &__link {
+      background: transparent;
+    }
+  }
+}
+
+//.p-gallery
+.p-gallery {
+  padding: 30vw 0 0 0;
+
+  & .second {
+    height: 400px;
+  }
+}
+
+//.p-recruit
+.p-recruit {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__txtarea {
+    width: 45%;
+  }
+
+  &__btn {
+    margin-top: 20vw;
+    width: 45%;
+  }
+
+  &__left {
+    display: none;
+  }
+
+  &__right {
+    top: 98%;
+    right: 5%;
+    max-width: 370px;
+  }
+}
+
+//.p-access
+.p-access {
+  padding-top: 10vw;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .title {
+    padding-left: 7%;
+  }
+
+  &__time {
+    margin-top: 30vw;
+
+    & table {
+      & .close {
+        &::before {
+          transform: rotate(-48deg);
+          width: 10vw;
+        }
+      }
+    }
+  }
+}
+
+//.p-news
+.p-news {
+  padding: 10vw 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: block;
+    width: 25%;
+
+    & .title {
+      padding-left: 28%;
+    }
+
+    & .ja {
+      padding-left: 7vw;
+      font-size: 1rem;
+    }
+  }
+
+  &__block {
+    width: 70%;
+  }
+
+  &__item {
+    padding: 0;
+
+    & a {
+      padding: 5vw;
+      font-size: 1.1rem;
+    }
+
+    &::after {
+      right: -8%;
+    }
+  }
+
+  & .c-btn {
+    margin-top: 60px;
+  }
+}
+
+//.p-footer
+.p-footer {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    width: 54%;
+  }
+
+  & .ft-info {
+    width: 45%;
+  }
+}
+
+// * * * * * * * * * news-page * * * * * * 
+.c-news {
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  &__title {
+    & .c-head01 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// * * * * * * * * * news-sl-page * * * * * * 
+.c-news-sl {
+  padding: 10vw;
+
+  &__contents {
+    padding: 10vw 0;
+  }
+}
+
+// * * * * * * * * * about-page * * * * * * 
+.about-policy-sec {
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    width: 45%;
+    height: 380px;
+  }
+
+  &__wrap {
+    width: 45%;
+  }
+
+  &:last-of-type {
+    padding-top: 10vw;
+    flex-direction: row-reverse;
+  }
+
+  & .c-txt-sm {
+    line-height: 1.6;
+  }
+}
+
+.about-promise {
+  &-content {
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img {
+      width: 60%;
+    }
+
+    & .title {
+      width: 40%;
+      padding-left: 12%;
+
+      &::before {
+        top: -235px;
+        width: 80px;
+      }
+    }
+  }
+
+  .c-content02 {
+    &__item {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+// * * * * * * * * * clinic-page * * * * * * 
+.clinic-content {
+  overflow: hidden;
+
+  .clinic-director {
+    &-sec {
+      padding-top: 80px;
+    }
+
+    &__img {
+      margin: 0;
+      margin-left: 5vw;
+      max-width: 470px;
+      background-size: contain;
+    }
+
+    &__career {
+      bottom: -60px;
+      right: -260px;
+
+      &-year {
+        margin-bottom: 3vw;
+      }
+    }
+
+    &-performance {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .clinic-facility {
+    &-list {
+      &__txtarea {
+        display: flex;
+        align-items: center;
+        width: 50%;
+      }
+
+      &__img {
+        width: 50%;
+      }
+
+      &__item {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 6vw;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 200px;
+      }
+    }
+  }
+
+  .clinic-equipment {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__head {
+        text-align: center;
+      }
+
+      &__img {
+        float: none;
+        width: 100%;
+        height: 150px;
+      }
+
+      &__item {
+        width: 30.9%;
+        border-bottom: none;
+
+        &:nth-child(3n+1) {
+          margin-right: 2vw;
+        }
+
+        &:nth-child(3n) {
+          margin-left: 2vw;
+        }
+      }
+    }
+  }
+
+  .c-bg-grey02 {
+    margin: 0 2vw;
+
+    &::before {
+      min-width: none;
+      width: 100%;
+    }
+  }
+}
+
+// * * * * * * * * * menu-page * * * * * * 
+.menu-contents {
+  .menu-about-sec {
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .is-order {
+      flex-direction: row-reverse;
+    }
+
+    &__img {
+      width: 40%;
+      height: 270px;
+    }
+
+    &__txtarea {
+      width: 54%;
+
+      & .c-txt-sm {
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .c-bg-grey03 {
+    &::before {
+      top: 100px;
+      height: 280px;
+      width: 100%;
+    }
+  }
+}
+
+// * * * * * * * * * recruit-page * * * * * * 
+.contents-recruit {
+  .c-table01 {
+    & tr {
+      & th {
+        vertical-align: top;
+        min-width: 200px;
+      }
+    }
+
+    & .u-view-sp {
+      display: none;
+    }
+  }
+}
+
+// * * * * * * * * * faq-page * * * * * * 
+.faq-contents {
+  & .c-container {
+    padding: 0 7vw;
+  }
+
+  & .faq {
+    margin: 30vw 0 10vw 0;
+
+    &__title {
+      text-align: center;
+    }
+
+    & .c-txtarea01 {
+      & .c-txt-sm {
+        font-size: 16px;
+      }
+    }
+
+    & dt {
+      &::before {
+        font-size: 28px;
+      }
+
+      & span {
+        &::after {
+          width: 3vw;
+        }
+      }
+    }
+
+    & dd {
+      &::before {
+        font-size: 30px;
+      }
+    }
+  }
+
+  & .nw-topview {
+    margin: 0 -3vw;
+
+    &__inner {
+      margin: 0 -4vw;
+    }
+  }
+}

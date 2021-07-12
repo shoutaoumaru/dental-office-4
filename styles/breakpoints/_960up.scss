@@ -1,0 +1,276 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.c-txt-sm {
+  font-size: .9rem;
+}
+
+.c-txt-md {
+  font-size: 1.4rem;
+}
+
+.c-container {
+  padding: 0 8vw;
+}
+
+.sp-navbtn {
+  display: none;
+}
+
+.mobile-container {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.pc-nav.inview {
+  & .pc-nav-link {
+    color: #ffff;
+  }
+}
+
+//.p-header
+.p-header {
+  & .logo__img {
+    margin: 35px 20px 0 10px;
+
+    & .logo {
+      width: 140px;
+    }
+  }
+
+  & .pc-container {
+    height: 105px;
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid #242424;
+
+    & .pc-nav-item {
+      padding-top: 4.8vw;
+      padding-right: 4vw;
+    }
+  }
+}
+
+//.p-top
+.p-top {
+  & .swiper-container {
+    height: 100vh;
+  }
+}
+
+//.p-policy 
+.p-policy {
+  padding-bottom: 26vw;
+}
+
+//.p-gallery
+.p-gallery {
+  margin-top: 5vw;
+  padding: 8vw 0 0 0;
+
+  &__slider {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+//.p-recruit
+.p-recruit {
+  &__right {
+    max-width: 500px;
+    height: 280px;
+    bottom: -410px;
+  }
+}
+
+//.p-access
+.p-access {
+  & .c-container {
+    padding: 0 5vw;
+  }
+
+  &__title {
+    padding-left: 2vw;
+  }
+
+  &__time {
+    margin-top: 20vw;
+    padding-bottom: 4vw;
+
+    & table {
+      & .close {
+        &::before {
+          width: 9.5vw;
+          transform: rotate(-46deg);
+        }
+      }
+    }
+  }
+
+  &-container {
+    align-items: flex-end;
+  }
+}
+
+//.p-news
+.p-news {
+
+  &__item {
+    & a {
+      padding: 4vw;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+//.p-footer 
+.p-footer {
+  padding: 5vw 0;
+
+  &__link {
+    font-size: .9rem;
+  }
+
+  & .ft-info__logo {
+    width: 130px;
+  }
+}
+
+//* * * * * * * news-page * * * * * * *   
+.c-news {
+  &__link {
+    padding: 4vw;
+
+    & span,
+    & p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// * * * * * * * * * news-sl-page * * * * * * 
+.c-news-sl {
+  padding: 10vw;
+
+  &__contents {
+    padding: 10vw 0;
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  & .more-link {
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+  }
+
+  &__date {
+    font-size: 1.4rem;
+  }
+}
+
+// * * * * * * * * * about-page * * * * * * 
+.about-policy {
+  &-sec {
+    & .title {
+      margin: 0;
+    }
+  }
+}
+
+.about-promise {
+  .c-content02 {
+    &__item {
+      width: 70%;
+      margin: -10vw 0 0 32vw;
+    }
+  }
+
+  & .c-bg-grey03 {
+    &::before {
+      height: 130%;
+    }
+  }
+}
+
+// * * * * * * * * * clinic-page * * * * * * 
+.clinic-content {
+  .clinic-director {
+    &__img {
+      background: url(/images/clinic/pic_director01_pc.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: none;
+      width: 60%;
+      margin-left: 6vw;
+    }
+  }
+
+  .clinic-facility {
+    &-list {
+      &__item {
+        height: 250px;
+      }
+    }
+  }
+
+  .c-bg-grey02 {
+    &::before {
+      top: 0;
+      margin: 0 6vw;
+      width: 50%;
+    }
+  }
+}
+
+// * * * * * * * * * menu-page * * * * * * 
+.menu-contents {
+  .menu-about-sec {
+    &__img {
+      height: 300px;
+    }
+  }
+}
+
+// * * * * * * * * * recruit-page * * * * * * 
+.contents-recruit {
+  & .recruit {
+    &-message {
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__block {
+        width: 31%;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 5vw;
+    }
+
+  }
+
+  .c-table01 {
+    td {
+      line-height: 2;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,12 +1,12 @@
 @import 'modules/mixin';
 @import 'modules/setting';
 @import 'breakpoints/base';
-@import 'modules/hero-slider';
 @import 'modules/svg-animation';
+@import 'modules/hero-slider';
+@import 'modules/mobile';
 @import 'modules/appear';
 @import 'modules/image-slide';
 @import 'modules/accordion';
-@import 'modules/mobile';
 @import 'modules/text-animation';
 
 @media (min-width:600px) {

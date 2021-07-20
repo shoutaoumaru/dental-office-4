@@ -1,11 +1,6 @@
 //.header
 .p-header {
-  height: 64px;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
 
   & .logo__img {
     display: inline-block;

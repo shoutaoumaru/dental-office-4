@@ -2665,7 +2665,7 @@ a:visited {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 4000;
   overflow: hidden;
   height: 64px;
   width: 100%;
@@ -2770,7 +2770,7 @@ a:visited {
 }
 
 .menu-open.mobile-menu {
-  z-index: 50;
+  z-index: 3000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: none;

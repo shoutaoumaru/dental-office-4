@@ -423,21 +423,6 @@ a:visited {
   margin-right: 5px;
 }
 
-.icon-tel {
-  position: relative;
-}
-
-.icon-tel::before {
-  content: '';
-  display: block;
-  background-image: url(/images/common/icon-tel.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 17px;
-  width: 17px;
-}
-
 .icon-map {
   position: relative;
 }
@@ -453,19 +438,30 @@ a:visited {
   width: 17px;
 }
 
-.icon-net {
-  position: relative;
-}
-
-.icon-net::before {
-  content: '';
-  display: block;
-  background-image: url(/images/common/icon-calendar.png);
+.icon-tel {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 17px;
-  width: 17px;
+  height: 12px;
+  width: 12px;
+}
+
+.icon-net {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-insta {
@@ -2514,21 +2510,19 @@ a:visited {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: white;
   opacity: .7;
-  height: 7vh;
+  height: 6.5vh;
   width: 100%;
-  z-index: 100;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  z-index: 2000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .p-header .sp-navbtn__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2540,12 +2534,26 @@ a:visited {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 60vw;
+  width: 77vw;
   margin: auto;
 }
 
 .p-header .sp-navbtn__container a {
+  position: relative;
+  color: #424242;
+  font-size: 14px;
+  letter-spacing: 1px;
   display: block;
+  padding-right: 18px;
+}
+
+.p-header .sp-navbtn__container .tel {
+  letter-spacing: 2px;
+}
+
+.p-header .sp-navbtn__container a:hover,
+.p-header .sp-navbtn__container a:active {
+  text-decoration: underline;
 }
 
 .p-header .hide.sp-navbtn {

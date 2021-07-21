@@ -412,22 +412,6 @@ a:visited {
   }
 }
 
-.icon-tel {
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/common/icon-tel.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
-}
-
 .icon-map {
   position: relative;
 
@@ -444,20 +428,30 @@ a:visited {
 
 }
 
+.icon-tel {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-tel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 12px;
+}
+
 .icon-net {
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/common/icon-calendar.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-insta {

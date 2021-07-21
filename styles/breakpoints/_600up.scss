@@ -58,6 +58,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   & .mobile-container {
     height: 78px;
   }
+
+  & .sp-navbtn {
+    display: none;
+  }
+}
+
+//.p-top
+.p-top {
+  & .swiper-container {
+    height: 100vh;
+  }
 }
 
 //.p-policy

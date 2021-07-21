@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // <!-------- HeroSlider-animation -------->
-  const hero = new HeroSlider('.swiper-container');
+  setTimeout(() => {
+    const hero = new HeroSlider('.swiper-container');
+    hero.start();
+  }, 4000);
   const hero2 = new HeroSlider2('.swiper-container2');
-  hero.start();
   hero2.start();
   // <!-------- /HeroSlider-animation -------->
-  // <!-------- text-animation -------->
   const cb = function (el, inview) {
     if (inview) {
       const ta = new TextAnimation(el);
@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     rootMargin: '-100px 0px',
   });
   // <!-------- /text-animation -------->
-  // <!-------- inview-animation -------->
   const so2 = new ScrollObserver(
     '.appear',
     (el, inview) => {
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   );
   // <!-------- /inview-animation -------->
-  // <!-------- imgSlide-animation -------->
   const so3 = new ScrollObserver(
     '.cover-slide',
     (el, inview) => {

@@ -3548,6 +3548,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .p-header .mobile-container {
     height: 78px;
   }
+  .p-header .sp-navbtn {
+    display: none;
+  }
+  .p-top .swiper-container {
+    height: 100vh;
+  }
   .p-policy {
     margin-top: 10vw;
   }
@@ -4001,10 +4007,15 @@ Stylesheet: 960px以上のモニタで適用
     width: 140px;
   }
   .p-header .pc-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 105px;
+    width: 100%;
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     border-bottom: 1px solid #242424;
+    z-index: 1000;
   }
   .p-header .pc-container .pc-nav-item {
     padding-top: 4.8vw;

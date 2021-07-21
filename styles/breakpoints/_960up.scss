@@ -44,9 +44,14 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .pc-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 105px;
+    width: 100%;
     backdrop-filter: blur(3px);
     border-bottom: 1px solid #242424;
+    z-index: 1000;
 
     & .pc-nav-item {
       padding-top: 4.8vw;

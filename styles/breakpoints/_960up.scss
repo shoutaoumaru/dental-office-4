@@ -88,7 +88,7 @@ Stylesheet: 960px以上のモニタで適用
 .p-recruit {
   &__right {
     max-width: 500px;
-    height: 280px;
+    height: 250px;
     bottom: -410px;
   }
 }
@@ -106,15 +106,6 @@ Stylesheet: 960px以上のモニタで適用
   &__time {
     margin-top: 20vw;
     padding-bottom: 4vw;
-
-    & table {
-      & .close {
-        &::before {
-          width: 9.5vw;
-          transform: rotate(-46deg);
-        }
-      }
-    }
   }
 
   &-container {

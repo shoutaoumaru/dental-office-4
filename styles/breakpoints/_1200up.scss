@@ -46,7 +46,7 @@ Stylesheet: 1200px以上のモニタで適用
 //.p-recruite 
 .p-recruit {
   &__right {
-    top: 70%;
+    top: 132%;
     right: 8%;
     height: 220px;
   }
@@ -66,13 +66,16 @@ Stylesheet: 1200px以上のモニタで適用
     & table {
       & .close {
         &::before {
-          width: 8.2vw;
-          transform: rotate(-43deg);
+          width: 7.5vw;
         }
       }
 
+      & th {
+        font-size: 1rem;
+      }
+
       & td {
-        padding: 2.3vw 2.7vw;
+        font-size: 1rem;
       }
     }
   }
@@ -136,6 +139,17 @@ Stylesheet: 1200px以上のモニタで適用
     &__subtitle {
       font-size: 30px;
     }
+  }
+}
+
+// * * * * * * * * * news-page * * * * * * 
+.c-news {
+  &__title {
+    margin-bottom: 5vw;
+  }
+
+  &__link {
+    padding: 2vw 4vw;
   }
 }
 

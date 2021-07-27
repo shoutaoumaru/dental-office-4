@@ -214,7 +214,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 
   &__right {
-    top: 98%;
+    top: 150%;
     right: 5%;
     max-width: 370px;
   }
@@ -237,10 +237,14 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     margin-top: 30vw;
 
     & table {
+      & td {
+        padding: 2vw;
+      }
+
       & .close {
         &::before {
-          transform: rotate(-48deg);
-          width: 10vw;
+          transform: rotate(-46deg);
+          width: 8vw;
         }
       }
     }
@@ -318,6 +322,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     & .c-head01 {
       font-size: 2.5rem;
     }
+  }
+
+  .page-numbers {
+    margin: 3vw 0;
   }
 }
 

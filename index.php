@@ -2,14 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>歯科テンプレート４</title>
-  <link rel="stylesheet" href="/styles/vendors/logo-animation.min.css">
-  <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
-  <link rel="stylesheet" href="styles/vendors/animsition.min.css">
-  <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
-  <link rel="stylesheet" href="styles/style.css" />
+ <?php get_header(); ?>
 </head>
 
 <body class="animsition">
@@ -88,7 +81,7 @@
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -103,29 +96,29 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/about/about.html"><span>わたしたちについて</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>"><span>わたしたちについて</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/clinic/clinic.html"><span>医院案内</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>"><span>医院案内</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/treatment/treatment.html"><span>診療案内</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>"><span>診療案内</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>"><span>よくあるご質問</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link " href="/recruit/recruit.html"><span>採用情報</span></a>
+              <a class="pc-nav-link animsition-link " href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span></a>
             </li>
           </ul>
         </nav>
@@ -147,16 +140,16 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="view-sp" src="images/home/clinic__1@sp.jpg" />
-                <img class="view-pc" src="images/home/clinic__1@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/clinic__1@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/clinic__1@pc.jpg" />
               </div>
               <div class="swiper-slide">
-                <img class="view-sp" src="images/home/medical__1@sp.jpg" />
-                <img class="view-pc" src="images/home/medical__1@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/medical__1@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/medical__1@pc.jpg" />
               </div>
               <div class="swiper-slide">
-                <img class="view-sp" src="images/home/reception@sp.jpg" />
-                <img class="view-pc" src="images/home/reception@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/reception@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/reception@pc.jpg" />
               </div>
             </div>
           </div>
@@ -167,7 +160,7 @@
         <div class="c-container">
           <div class="p-policy-wrap appear up">
             <div class="p-policy__img item">
-              <img class="parallax-up" src="/images/home/medical__4@pc.jpg">
+              <img class="parallax-up" src="<?php echo get_template_directory_uri(); ?>/images/home/medical__4@pc.jpg">
             </div>
             <div class="p-policy-container">
               <div class="p-policy__title clip-js left">
@@ -185,7 +178,7 @@
                   それらを解決するために治療技術の研鑽はもちろん、そのための環境を十分に整えてお待ちしております。その上で私たちがより大事にしているもの、それは痛くない、怖くない、通いやすいクリニックであることです。
                 </p>
                 <div class="p-policy__btn c-btn01">
-                  <a class="c-btn01__link animsition-link" href="/about/about.html">わたしたちについて</a>
+                  <a class="c-btn01__link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
                 </div>
               </div>
             </div>
@@ -197,7 +190,7 @@
         <div class="c-container">
           <div class="p-message-wrap">
             <div class="p-message__img appear up">
-              <img class="item" src="/images/home/staff__1@sp.jpg" alt="">
+              <img class="item" src="<?php echo get_template_directory_uri(); ?>/images/home/staff__1@sp.jpg" alt="">
               <div class="p-message__name item">
                 <p class="c-txt-md small">院長</p>
                 <p class="c-txt-md">利部 翔太</p>
@@ -217,7 +210,7 @@
                 私たちはなるべく痛くなく、怖くない、通いやすい医院を目指しています。
               </p>
               <div class="p-message__btn c-btn01 item">
-                <a class="c-btn01__link animsition-link" href="/clinic/clinic.html">院長紹介</a>
+                <a class="c-btn01__link animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>">院長紹介</a>
               </div>
             </section>
           </div>
@@ -231,19 +224,19 @@
           <p class="p-promise__cover  clip-js left">promise</p>
           <ul class="p-promise__list appear up">
             <li class="p-promise__list__item item">
-              <div class="p-promise__list__img"><img src="/images/home/treatment@pc.jpg" alt=""></div>
+              <div class="p-promise__list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/treatment@pc.jpg" alt=""></div>
               <div class="p-promise__list__txtarea">
                 <p class="p-promise__list__txt">痛みや不安に配慮した<br>快適な治療</p>
               </div>
             </li>
             <li class="p-promise__list__item item">
-              <div class="p-promise__list__img"><img src="/images/home/tool3.jpg" alt=""></div>
+              <div class="p-promise__list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/tool3.jpg" alt=""></div>
               <div class="p-promise__list__txtarea">
                 <p class="p-promise__list__txt">最高峰の<br>技術と環境</p>
               </div>
             </li>
             <li class="p-promise__list__item item">
-              <div class="p-promise__list__img"><img src="/images/home/reception@pc.jpg" alt=""></div>
+              <div class="p-promise__list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/reception@pc.jpg" alt=""></div>
               <div class="p-promise__list__txtarea">
                 <p class="p-promise__list__txt">心地の良い応対と<br>とびきりの笑顔</p>
               </div>
@@ -296,7 +289,7 @@
               </li>
             </ul>
             <div class="p-guidance__btn c-btn01 item">
-              <a class="c-btn01__link animsition-link" href="/menu/menu.html">診察案内</a>
+              <a class="c-btn01__link animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>">診察案内</a>
             </div>
           </div>
         </div>
@@ -311,19 +304,19 @@
             <div class="swiper-container2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide second">
-                  <img src="images/home/room@pc.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/room@pc.jpg" />
                 </div>
                 <div class="swiper-slide second">
-                  <img src="images/home/kid-room.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/kid-room.jpg" />
                 </div>
                 <div class="swiper-slide second">
-                  <img src="images/home/ct.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/ct.jpg" />
                 </div>
                 <div class="swiper-slide second">
-                  <img src="images/home/toilet.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/toilet.jpg" />
                 </div>
                 <div class="swiper-slide second">
-                  <img src="images/home/rentogen.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/rentogen.jpg" />
                 </div>
               </div>
             </div>
@@ -344,14 +337,14 @@
               </div>
             </div>
             <div class="p-recruit__btn c-btn01 item">
-              <a class="c-btn01__link animsition-link" href="/recruit/recruit.html">採用情報</a>
+              <a class="c-btn01__link animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
             </div>
           </div>
           <div class="p-recruit__left clip-js1 left">
-            <img src="images/home/tool3.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/tool3.jpg" alt="">
           </div>
           <div class="p-recruit__right">
-            <img class="parallax-down" src="images/home/store__2.jpg" alt="">
+            <img class="parallax-down" src="<?php echo get_template_directory_uri(); ?>/images/home/store__2.jpg" alt="">
           </div>
         </div>
       </section>
@@ -444,28 +437,20 @@
             <h2 class="p-news__title clip-js left">
               <span class="title">NEWS</span>
               <p class="ja">
-                <a class="p-news__home-link animsition-link" href="/news/news.html">お知らせ一覧</a>
+                <a class="p-news__home-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ一覧</a>
               </p>
             </h2>
             <ul class="p-news__block item">
-              <li class="p-news__item ">
-                <a class="p-news__link" href="/news/news-single.html">
-                  <p class="p-news__date">2021.04.24</p>
-                  <p class="c-txt-sm">そもそも定期検診とは❔</p>
-                </a>
-              </li>
-              <li class="p-news__item ">
-                <a class="p-news__link" href="/news/news-single.html">
-                  <p class="p-news__date">2021.04.05</p>
-                  <p class="c-txt-sm">唾液腺マッサージって？？</p>
-                </a>
-              </li>
-              <li class="p-news__item ">
-                <a class="p-news__link" href="/news/news-single.html">
-                  <p class="p-news__date">2021.03.13</p>
-                  <p class="c-txt-sm">口臭がきつくなる３つの原因と治療方法</p>
-                </a>
-              </li>
+              <?php query_posts('posts_per_page=3'); ?>
+              <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                <li class="p-news__item ">
+                  <a class="p-news__link" href="<?php the_permalink() ;?>">
+                    <p class="p-news__date"><?php echo get_the_date(); ?></p>
+                    <p class="c-txt-sm"><?php the_title(); ?></p>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+              <?php endif; ?>
             </ul>
           </div>
         </div>
@@ -476,22 +461,22 @@
           <div class="p-footer__block">
             <ul class="p-footer__list">
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/about/about.html">わたしたちについて</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/clinic/clinic.html">医院紹介</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>">医院紹介</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/menu/menu.html">診療案内</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>">診療案内</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/news/news.html">お知らせ</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/faq/faq.html">よくあるご質問</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/recruit/recruit.html">採用情報</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
               </li>
             </ul>
           </div>
@@ -506,7 +491,7 @@
               </div>
             </div>
             <div class="ft-info__logos">
-              <div class="ft-info__logo"><img src="/images/common/riv_logo_official2.png" alt="rivround"></div>
+              <div class="ft-info__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="rivround"></div>
               <p class="ft-cr"><small class="ft-cr__txt">© Riv Round</small></p>
             </div>
           </div>
@@ -519,22 +504,22 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/about/about.html">わたしたちについて</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/menu.html">診療案内</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>">診療案内</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/clinic/clinic.html">医院紹介</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>">医院紹介</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">お知らせ</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -556,19 +541,7 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- /.superwrapper -->
-  <script src="scripts/vendors/pace.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="scripts/vendors/animsition.min.js"></script>
-  <script src="scripts/vendors/swiper.min.js"></script>
-  <script src="scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="scripts/libs/scroll.js"></script>
-  <script src="/scripts/vendors/simpleParallax.min.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="scripts/libs/mobile-menu.js"></script>
-  <script src="scripts/main.js"></script>
+ <?php get_footer(); ?>
 </body>
 
 </html>

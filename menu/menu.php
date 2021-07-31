@@ -1,3 +1,7 @@
+<?php
+ /* Template Name: menu
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,10 +9,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>歯科テンプレート４</title>
-  <link rel="stylesheet" href="../styles/vendors/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendors/animsition.min.css">
-  <link rel="stylesheet" href="../styles/vendors/swiper.min.css" />
-  <link rel="stylesheet" href="../styles/style.css" />
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class="logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -31,29 +32,29 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>ホーム</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/')); ?>"><span>ホーム</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/about/about.html"><span>わたしたちについて</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>"><span>わたしたちについて</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/clinic/clinic.html"><span>医院案内</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>"><span>医院案内</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>"><span>よくあるご質問</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link " href="/recruit/recruit.html"><span>採用情報</span></a>
+              <a class="pc-nav-link animsition-link " href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span></a>
             </li>
           </ul>
         </nav>
@@ -83,7 +84,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__subtitle">一般歯科</h2>
             <div class="menu-about-sec__flex is-order">
-              <div class="menu-about-sec__img"><img src="/images/home/treatment@pc.jpg" alt=""></div>
+              <div class="menu-about-sec__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/treatment@pc.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">患者様の満足最優先<br class="u-view-pc">しっかり聞き、しっかり説明します
                 </p>
@@ -98,7 +99,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__subtitle">小児歯科</h2>
             <div class="menu-about-sec__flex">
-              <div class="menu-about-sec__img is_no_download"><img src="/images/home/kids__2@pc.jpg" alt=""></div>
+              <div class="menu-about-sec__img is_no_download"><img src="<?php echo get_template_directory_uri(); ?>/images/home/kids__2@pc.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">大切なお子様の歯を守る<br class="u-view-pc">むし歯にならないための予防治療
                 </p>
@@ -113,7 +114,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__subtitle">予防歯科</h2>
             <div class="menu-about-sec__flex is-order">
-              <div class="menu-about-sec__img"><img src="/images/home/patient__1@pc.jpg" alt=""></div>
+              <div class="menu-about-sec__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/patient__1@pc.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">同じ痛みを繰り返さないために<br class="u-view-pc">予防歯科に力を入れています
                 </p>
@@ -128,7 +129,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__subtitle">ホワイトニング</h2>
             <div class="menu-about-sec__flex">
-              <div class="menu-about-sec__img"><img src="/images/home/whitening@pc.jpg" alt=""></div>
+              <div class="menu-about-sec__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/whitening@pc.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">安全・安心のホワイトニングで<br class="u-view-pc">健康で美しい口元に</p>
                 <p class="c-txt-sm">
@@ -142,7 +143,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__subtitle">セラミック治療</h2>
             <div class="menu-about-sec__flex is-order">
-              <div class="menu-about-sec__img"><img src="/images/home/pic_menu05.jpg" alt=""></div>
+              <div class="menu-about-sec__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/pic_menu05.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">審美性に優れ、体にも優しい治療<br
                     class="u-view-pc">あなたの素敵な笑顔を演出します</p>
@@ -157,7 +158,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__subtitle">インプラント</h2>
             <div class="menu-about-sec__flex">
-              <div class="menu-about-sec__img"><img src="/images/home/pic_menu06.jpg" alt=""></div>
+              <div class="menu-about-sec__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/pic_menu06.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">歯の機能と美しさを取り戻す<br class="u-view-pc">安全性の高い、第二の永久歯
                 </p>
@@ -172,7 +173,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__subtitle">マウスピース矯正</h2>
             <div class="menu-about-sec__flex is-order">
-              <div class="menu-about-sec__img"><img src="/images/home/mouthpiece_1.jpg" alt=""></div>
+              <div class="menu-about-sec__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/mouthpiece_1.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">装着が目立ちにくい矯正で<br class="u-view-pc">自信を持てる笑顔に</p>
                 <p class="c-txt-sm">
@@ -186,7 +187,7 @@
           <div class="c-container item">
             <h2 class="menu-about-sec__head c-head04 is-ico is-root ">歯根治療</h2>
             <div class="menu-about-sec__flex">
-              <div class="menu-about-sec__img"><img src="/images/home/treatment-img07.jpg" alt=""></div>
+              <div class="menu-about-sec__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/treatment-img07.jpg" alt=""></div>
               <div class="menu-about-sec__txtarea">
                 <p class="menu-about-sec__txtarea-head c-txt-brown01 ">なるべく抜かずに歯を残す<br class="u-view-pc">精度の高い歯根治療</p>
                 <p class="c-txt-sm">
@@ -203,22 +204,22 @@
           <div class="p-footer__block">
             <ul class="p-footer__list">
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/">ホーム</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/about/about.html">わたしたちについて</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/clinic/clinic.html">医院紹介</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>">医院紹介</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/news/news.html">お知らせ</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/faq/faq.html">よくあるご質問</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/recruit/recruit.html">採用情報</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
               </li>
             </ul>
           </div>
@@ -235,7 +236,7 @@
               </div>
             </div>
             <div class="ft-info__logos">
-              <div class="ft-info__logo"><img src="/images/common/riv_logo_official2.png" alt="rivround"></div>
+              <div class="ft-info__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="rivround"></div>
               <p class="ft-cr"><small class="ft-cr__txt">© Riv Round</small></p>
             </div>
           </div>
@@ -248,22 +249,22 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">ホーム</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">ホーム</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/about/about.html">わたしたちについて</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/clinic/clinic.html">医院紹介</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/clinic')); ?>">医院紹介</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">お知らせ</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">お知らせ</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -284,14 +285,8 @@
     </div>
     <!-- /.mobile-menu -->
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendors/animsition.min.js"></script>
-  <script src="../scripts/libs/page.js"></script>
-  <script src="../scripts/libs/text-animation.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/scroll.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
-  <script src="../scripts/c-main.js"></script>
+   <!-- /#main-wrapper -->
+  <?php get_template_part('includes/c-footer'); ?>      
 </body>
 
 </html>

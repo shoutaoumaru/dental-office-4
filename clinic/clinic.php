@@ -1,3 +1,7 @@
+<?php
+ /* Template Name: clinic
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,10 +9,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>歯科テンプレート４</title>
-  <link rel="stylesheet" href="../styles/vendors/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendors/animsition.min.css" />
-  <link rel="stylesheet" href="../styles/vendors/swiper.min.css" />
-  <link rel="stylesheet" href="../styles/style.css" />
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -31,29 +32,29 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>ホーム</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/')); ?>"><span>ホーム</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/about/about.html"><span>わたしたちについて</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>"><span>わたしたちについて</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/menu/menu.html"><span>診療案内</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>"><span>診療案内</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>"><span>よくあるご質問</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link " href="/recruit/recruit.html"><span>採用情報</span></a>
+              <a class="pc-nav-link animsition-link " href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span></a>
             </li>
           </ul>
         </nav>
@@ -136,7 +137,7 @@
           <h2 class="c-head04 item">施設紹介</h2>
           <ul class="clinic-facility-list item">
             <li class="clinic-facility-list__item">
-              <div class="clinic-facility-list__img"><img src="/images/home/reception@pc.jpg" alt=""></div>
+              <div class="clinic-facility-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/reception@pc.jpg" alt=""></div>
               <div class="clinic-facility-list__txtarea">
                 <div class="clinic-facility-list__wrap">
                   <p class="clinic-facility-list__head ">受付</p>
@@ -145,7 +146,7 @@
               </div>
             </li>
             <li class="clinic-facility-list__item">
-              <div class="clinic-facility-list__img"><img src="/images/home/clinic__1@pc.jpg" alt=""></div>
+              <div class="clinic-facility-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/clinic__1@pc.jpg" alt=""></div>
               <div class="clinic-facility-list__txtarea">
                 <div class="clinic-facility-list__wrap">
                   <p class="clinic-facility-list__head ">待合室</p>
@@ -156,7 +157,7 @@
               </div>
             </li>
             <li class="clinic-facility-list__item">
-              <div class="clinic-facility-list__img"><img src="/images/home/room@pc.jpg" alt=""></div>
+              <div class="clinic-facility-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/room@pc.jpg" alt=""></div>
               <div class="clinic-facility-list__txtarea">
                 <div class="clinic-facility-list__wrap">
                   <p class="clinic-facility-list__head ">診療室</p>
@@ -165,7 +166,7 @@
               </div>
             </li>
             <li class="clinic-facility-list__item">
-              <div class="clinic-facility-list__img"><img src="/images/home/counseling.jpg" alt=""></div>
+              <div class="clinic-facility-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling.jpg" alt=""></div>
               <div class="clinic-facility-list__txtarea">
                 <div class="clinic-facility-list__wrap">
                   <p class="clinic-facility-list__head ">カウンセリングルーム</p>
@@ -175,7 +176,7 @@
               </div>
             </li>
             <li class="clinic-facility-list__item">
-              <div class="clinic-facility-list__img"><img src="/images/home/kid-room.jpg" alt=""></div>
+              <div class="clinic-facility-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/kid-room.jpg" alt=""></div>
               <div class="clinic-facility-list__txtarea">
                 <div class="clinic-facility-list__wrap">
                   <p class="clinic-facility-list__head ">キッズスペース</p>
@@ -185,7 +186,7 @@
               </div>
             </li>
             <li class="clinic-facility-list__item">
-              <div class="clinic-facility-list__img"><img src="/images/home/mouthpiece_2.jpg" alt=""></div>
+              <div class="clinic-facility-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/mouthpiece_2.jpg" alt=""></div>
               <div class="clinic-facility-list__txtarea">
                 <div class="clinic-facility-list__wrap">
                   <p class="clinic-facility-list__head ">専門医との連携</p>
@@ -194,7 +195,7 @@
               </div>
             </li>
             <li class="clinic-facility-list__item">
-              <div class="clinic-facility-list__img"><img src="/images/home/car-space.jpg" alt=""></div>
+              <div class="clinic-facility-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/car-space.jpg" alt=""></div>
               <div class="clinic-facility-list__txtarea">
                 <div class="clinic-facility-list__wrap">
                   <p class="clinic-facility-list__head ">駐車場</p>
@@ -212,19 +213,19 @@
           <h2 class="c-head04 item">院内設備</h2>
           <ul class="clinic-equipment-list item">
             <li class="clinic-equipment-list__item">
-              <div class="clinic-equipment-list__img"><img src="/images/home/ct.jpg" alt=""></div>
+              <div class="clinic-equipment-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/ct.jpg" alt=""></div>
               <p class="clinic-equipment-list__head c-txt-brown01">CTスキャン</p>
               <p class="c-txt-sm">
                 歯科用CT最大手企業のモリタ製の最新歯科用CTを導入しています。非常に精度の高いレントゲン像と、低被曝を実現しており精密なインプラント治療や根管治療に欠かせません。より精度の高い診断とハイレベルな治療を受けて頂くことが可能となります。
               </p>
             </li>
             <li class="clinic-equipment-list__item">
-              <div class="clinic-equipment-list__img"><img src="/images/home/rentogen.jpg" alt=""></div>
+              <div class="clinic-equipment-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/rentogen.jpg" alt=""></div>
               <p class="clinic-equipment-list__head is-line c-txt-brown01">デジタルレントゲン</p>
               <p class="c-txt-sm">当院ではデジタルX線撮影を導入しております。従来のレントゲン撮影から1/5〜1/10の線量にてレントゲン撮影が可能です。</p>
             </li>
             <li class="clinic-equipment-list__item">
-              <div class="clinic-equipment-list__img"><img src="/images/home/img-machine2@2x.jpg" alt=""></div>
+              <div class="clinic-equipment-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/img-machine2@2x.jpg" alt=""></div>
               <p class="clinic-equipment-list__head c-txt-brown01">検知液</p>
               <p class="c-txt-sm">
                 虫歯の箇所を赤く染めるための溶液です。治療すべき箇所を、より確実に把握するために使用します。また、医師側だけでなく、患者さまにも状況を把握していただくことにも繋がり、お互いに症状を理解した上で治療に臨むことができます。
@@ -237,14 +238,14 @@
               <p class="c-txt-sm">当院では”私の歯医者さん”という予約アプリを導入しています。お電話を頂くことなく、webで簡単に予約を取ることが出来ます。</p>
             </li>
             <li class="clinic-equipment-list__item">
-              <div class="clinic-equipment-list__img"><img src="/images/home/img-machine5@2x.jpg" alt=""></div>
+              <div class="clinic-equipment-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/img-machine5@2x.jpg" alt=""></div>
               <p class="clinic-equipment-list__head is-line c-txt-brown01">滅菌器</p>
               <p class="c-txt-sm">
                 患者さまの治療に使った道具は、終わり次第、こちらの機器で滅菌をします。RivRound歯科では、滅菌器の中でも最上位機器にあたる「クラスB」を使用。一つひとつの道具にも最善の注意を払って、快適な治療環境を患者さまに提供しています。
               </p>
             </li>
             <li class="clinic-equipment-list__item">
-              <div class="clinic-equipment-list__img"><img src="/images/home/img-machine3@2x.jpg" alt=""></div>
+              <div class="clinic-equipment-list__img"><img src="<?php echo get_template_directory_uri(); ?>/images/home/img-machine3@2x.jpg" alt=""></div>
               <p class="clinic-equipment-list__head c-txt-brown01">電動注射器</p>
               <p class="c-txt-sm">
                 根管治療の際などに、麻酔液を歯茎に注入するために使う注射器です。麻酔液を、一定の力でムラなく注入することができるので、人の手で行うよりも、注入時の痛みを緩和することができます。</p>
@@ -310,22 +311,22 @@
           <div class="p-footer__block">
             <ul class="p-footer__list">
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/">ホーム</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/about/about.html">わたしたちについて</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/menu/menu.html">診療案内</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>">診療案内</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/news/news.html">お知らせ</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/faq/faq.html">よくあるご質問</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
               </li>
               <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/recruit/recruit.html">採用情報</a>
+                <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
               </li>
             </ul>
           </div>
@@ -342,7 +343,7 @@
               </div>
             </div>
             <div class="ft-info__logos">
-              <div class="ft-info__logo"><img src="/images/common/riv_logo_official2.png" alt="rivround"></div>
+              <div class="ft-info__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="rivround"></div>
               <p class="ft-cr"><small class="ft-cr__txt">© Riv Round</small></p>
             </div>
           </div>
@@ -355,22 +356,22 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">ホーム</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/about/about.html">わたしたちについて</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/menu.html">診療案内</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">診療案内</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">お知らせ</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">お知らせ</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -392,14 +393,7 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- /#main-wrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendors/animsition.min.js"></script>
-  <script src="../scripts/libs/page.js"></script>
-  <script src="../scripts/libs/text-animation.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/scroll.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
-  <script src="../scripts/c-main.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>      
 </body>
 
 </html>

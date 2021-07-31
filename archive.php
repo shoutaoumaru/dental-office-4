@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>歯科テンプレート4/news</title>
-  <link rel="stylesheet" href="../styles/vendors/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendors/animsition.min.css">
-  <link rel="stylesheet" href="../styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -16,7 +14,7 @@
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -30,29 +28,29 @@
       </div>
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
             <div class="logo-pc logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>ホーム</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/')); ?>"><span>ホーム</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/about/about.html"><span>わたしたちについて</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>"><span>わたしたちについて</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/clinic/clinic.html"><span>医院案内</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>"><span>医院案内</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/menu/menu.html"><span>診療案内</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>"><span>診療案内</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span></a>
+              <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>"><span>よくあるご質問</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link " href="/recruit/recruit.html"><span>採用情報</span></a>
+              <a class="pc-nav-link animsition-link " href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span></a>
             </li>
           </ul>
         </nav>
@@ -75,45 +73,19 @@
           <p class="contents-subtitle">お知らせ</p>
         </h2>
         <ul class="c-news__list">
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2021.4.5</span>
-              <p class="c-news__tit">新型コロナウィルス感染予防について。</p>
-            </a>
-          </li>
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2021.1.5</span>
-              <p class="c-news__tit">東京都緊急事態宣言について。</p>
-            </a>
-          </li>
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2020.11.5</span>
-              <p class="c-news__tit">時短営業について。</p>
-            </a>
-          </li>
+          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+            <li class="c-news__item">
+              <a href="<?php the_permalink() ;?>" class="c-news__link animsition-link">
+                <span class="c-news__date"><?php echo get_the_date(); ?></span>
+                <?php the_post_thumbnail('thumbnail'); ?>
+                <p class="c-news__tit"><?php the_title(); ?></p>
+              </a>
+            </li>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </ul>
-        <ul class="page-numbers">
-          <li>
-            <span aria-current="page" class="page-numbers current">1</span>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">2</a>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">3</a>
-          </li>
-          <li>
-            <span class="page-numbers dots">…</span>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">6</a>
-          </li>
-          <li>
-            <a class="next page-numbers" href="#">次のページへ</a>
-          </li>
-        </ul>
+        <!-- pagenesion -->
+        <?php if( function_exists ("the_pagination") ) the_pagination(); ?>
       </div>
     </section>
     <!-- /.news-top -->
@@ -122,22 +94,22 @@
         <div class="p-footer__block">
           <ul class="p-footer__list">
             <li class="p-footer__item">
-              <a class="p-footer__link animsition-link" href="/">ホーム</a>
+              <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
             </li>
             <li class="p-footer__item">
-              <a class="p-footer__link animsition-link" href="/about/about.html">わたしたちについて</a>
+              <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
             </li>
             <li class="p-footer__item">
-              <a class="p-footer__link animsition-link" href="/clinic/clinic.html">医院紹介</a>
+              <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>">医院紹介</a>
             </li>
             <li class="p-footer__item">
-              <a class="p-footer__link animsition-link" href="/menu/menu.html">診療案内</a>
+              <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>">診療案内</a>
             </li>
             <li class="p-footer__item">
-              <a class="p-footer__link animsition-link" href="/faq/faq.html">よくあるご質問</a>
+              <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
             </li>
             <li class="p-footer__item">
-              <a class="p-footer__link animsition-link" href="/recruit/recruit.html">採用情報</a>
+              <a class="p-footer__link animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
             </li>
           </ul>
         </div>
@@ -154,7 +126,7 @@
             </div>
           </div>
           <div class="ft-info__logos">
-            <div class="ft-info__logo"><img src="/images/common/riv_logo_official2.png" alt="rivround"></div>
+            <div class="ft-info__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="rivround"></div>
             <p class="ft-cr"><small class="ft-cr__txt">© Riv Round</small></p>
           </div>
         </div>
@@ -165,22 +137,22 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">ホーム</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/about/about.html">わたしたちについて</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/about')); ?>">わたしたちについて</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/menu.html">診療案内</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/menu')); ?>">診療案内</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/clinic/clinic.html">医院紹介</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/clinic')); ?>">医院紹介</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -203,10 +175,11 @@
   </div>
   <!-- /.main-wrapper -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendors/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendors/animsition.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>  
+  <?php wp_footer(); ?>
 </body>
 
 </html>

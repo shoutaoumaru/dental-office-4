@@ -66,6 +66,10 @@
       <!-- /.nav-btn -->
     </header>
     <!-- /.p-header -->
+    <div class="c-top-view">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/home/clinic__1@pc.jpg" alt="" />
+    </div>
+    <!-- /.c-top-view -->
     <section class="c-news">
       <div class="c-container">
         <h2 class="c-news__title clip-text left">

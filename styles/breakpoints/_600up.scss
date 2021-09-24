@@ -11,14 +11,14 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 }
 
 .c-txt-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cBlack;
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cBlack;
@@ -95,7 +95,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       position: absolute;
       top: 0;
       right: 0;
-      content: '';
+      content: "";
       display: block;
       background-color: rgb(250, 248, 248);
       height: 110%;
@@ -107,7 +107,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 //.p-message
 .p-message {
-
   &-wrap {
     display: flex;
     justify-content: space-between;
@@ -129,7 +128,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       position: absolute;
       top: 0;
       left: 0;
-      content: '';
+      content: "";
       display: block;
       background-color: rgb(250, 248, 248);
       height: 110%;
@@ -152,10 +151,9 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     &__txtarea {
       height: 80px;
       margin-top: -6px;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
-
 }
 
 //.p-guidance
@@ -312,7 +310,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-// * * * * * * * * * news-page * * * * * * 
+// * * * * * * * * * news-page * * * * * *
 .c-news {
   & .c-container {
     padding: 0 10vw;
@@ -329,7 +327,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-// * * * * * * * * * news-sl-page * * * * * * 
+// * * * * * * * * * news-sl-page * * * * * *
 .c-news-sl {
   padding: 10vw;
 
@@ -338,7 +336,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-// * * * * * * * * * about-page * * * * * * 
+// * * * * * * * * * about-page * * * * * *
 .about-policy-sec {
   display: flex;
   justify-content: space-between;
@@ -392,7 +390,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-// * * * * * * * * * clinic-page * * * * * * 
+// * * * * * * * * * clinic-page * * * * * *
 .clinic-content {
   overflow: hidden;
 
@@ -465,7 +463,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         width: 30.9%;
         border-bottom: none;
 
-        &:nth-child(3n+1) {
+        &:nth-child(3n + 1) {
           margin-right: 2vw;
         }
 
@@ -486,7 +484,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-// * * * * * * * * * menu-page * * * * * * 
+// * * * * * * * * * menu-page * * * * * *
 .menu-contents {
   .menu-about-sec {
     &__flex {
@@ -521,7 +519,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-// * * * * * * * * * recruit-page * * * * * * 
+// * * * * * * * * * recruit-page * * * * * *
 .contents-recruit {
   .c-table01 {
     & tr {
@@ -537,14 +535,14 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-// * * * * * * * * * faq-page * * * * * * 
+// * * * * * * * * * faq-page * * * * * *
 .faq-contents {
   & .c-container {
     padding: 0 7vw;
   }
 
   & .faq {
-    margin: 30vw 0 10vw 0;
+    margin: 10vw 0 10vw 0;
 
     &__title {
       text-align: center;

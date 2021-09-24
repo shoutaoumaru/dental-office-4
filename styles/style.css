@@ -5,9 +5,13 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: 'Cormorant Infant', serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Cormorant Infant", serif;
+  font-family: "Noto Serif JP", serif;
   letter-spacing: 1px;
+}
+
+body.hidden {
+  overflow: hidden;
 }
 
 #main-contents {
@@ -45,14 +49,14 @@ a:visited {
 }
 
 .c-txt-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   line-height: 2.3;
   color: #424242;
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #868686;
@@ -82,7 +86,7 @@ a:visited {
 }
 
 .c-sub-head01 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 5px;
   color: #424242;
@@ -91,7 +95,7 @@ a:visited {
 .subtitle {
   color: #998969;
   font-size: 1rem;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   line-height: 1.5;
   margin-bottom: 5%;
   font-weight: 600;
@@ -124,7 +128,7 @@ a:visited {
   position: absolute;
   bottom: -1px;
   left: 38%;
-  content: '';
+  content: "";
   width: 20vw;
   height: 1px;
   background-color: #85723f;
@@ -133,7 +137,7 @@ a:visited {
 
 .c-item-txt {
   padding-top: 20px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #868686;
 }
 
@@ -148,7 +152,7 @@ a:visited {
 .c-bg-grey02::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background: #f4f4f2;
   min-width: 325px;
   height: 100%;
@@ -169,7 +173,7 @@ a:visited {
 .c-bg-grey03::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background: #f4f4f2;
   width: 325px;
   height: 65.5%;
@@ -190,7 +194,7 @@ a:visited {
 }
 
 .back-list__link::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 48%;
@@ -212,7 +216,7 @@ a:visited {
 }
 
 .page-nation a {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-content02 {
@@ -239,7 +243,7 @@ a:visited {
 .c-head05::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background: url(../images/common/ico_tooth01.png) no-repeat center/contain;
   width: 20px;
   height: 20px;
@@ -251,14 +255,14 @@ a:visited {
   position: relative;
   padding-left: 75px;
   margin-bottom: 35px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 1.4rem;
 }
 
 .c-head06::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 60px;
   height: 60px;
   margin: auto;
@@ -292,7 +296,7 @@ a:visited {
 .c-btn01 a::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: 0;
   right: 20px;
   bottom: 0;
@@ -337,13 +341,13 @@ a:visited {
   position: relative;
   margin-bottom: 8px;
   font-size: 1.5rem;
-  letter-spacing: .15rem;
-  line-height: 1.0;
+  letter-spacing: 0.15rem;
+  line-height: 1;
 }
 
 .c-btn02__num::before {
   display: block;
-  content: '';
+  content: "";
   background: url(../images/common/ico_tel01.png) no-repeat center/contain;
   width: 17px;
   height: 17px;
@@ -352,8 +356,8 @@ a:visited {
 
 .c-btn02__txt {
   display: block;
-  font-size: .6rem;
-  line-height: 1.0;
+  font-size: 0.6rem;
+  line-height: 1;
 }
 
 .title {
@@ -369,7 +373,7 @@ a:visited {
 .title::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background: #e3e2dc;
   width: 40px;
   height: 1px;
@@ -409,7 +413,7 @@ a:visited {
 
 .c-btn04__link::before {
   display: block;
-  content: '';
+  content: "";
   background-image: url(../images/common/ico_mail01.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -424,7 +428,7 @@ a:visited {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-map.png);
   background-position: center;
@@ -469,7 +473,7 @@ a:visited {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -493,7 +497,7 @@ a:visited {
 
 .c-table01 td {
   line-height: 1.5;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 599px) {
@@ -545,7 +549,7 @@ a:visited {
   position: absolute;
   top: -79%;
   right: -7vw;
-  content: '';
+  content: "";
   display: block;
   background-color: #faf8f8;
   height: 250vh;
@@ -578,7 +582,7 @@ a:visited {
 }
 
 .p-message__name .small {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .p-promise {
@@ -608,7 +612,7 @@ a:visited {
   text-transform: uppercase;
   font-size: 4.3em;
   font-weight: bold;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   top: 10px;
   right: 0;
   left: 0;
@@ -642,7 +646,7 @@ a:visited {
   background: #fff;
   color: #998969 !important;
   font-size: 1em;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   line-height: 1.5;
 }
 
@@ -715,7 +719,7 @@ a:visited {
 .p-guidance__btn .c-btn01__link::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: 0;
   right: 20px;
   bottom: 0;
@@ -767,7 +771,7 @@ a:visited {
   left: 3%;
   z-index: 100;
   font-size: 3.5em;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   color: #424242;
   margin: 0;
 }
@@ -809,7 +813,7 @@ a:visited {
 
 .p-access__item {
   margin: 30px 0 30px 0;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .p-access__tel {
@@ -831,7 +835,7 @@ a:visited {
 }
 
 .p-access table th {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .p-access table th:first-child {
@@ -843,7 +847,7 @@ a:visited {
 }
 
 .p-access table td {
-  font-size: .6rem;
+  font-size: 0.6rem;
   color: #929090;
   padding: 2.7vw;
 }
@@ -888,7 +892,7 @@ a:visited {
   position: absolute;
   top: 0;
   left: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -918,7 +922,7 @@ a:visited {
 
 .p-news__title .ja {
   margin-top: 7vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 5;
 }
 
@@ -931,7 +935,7 @@ a:visited {
 .p-news__home-link::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   bottom: 0;
@@ -988,7 +992,7 @@ a:visited {
   height: 100%;
   text-decoration: none;
   padding: 8px 0;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #dbd4d4;
 }
 
@@ -1042,12 +1046,12 @@ a:visited {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1rem;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 .p-footer .ft-info__btns .c-btn03__txt::before {
   display: block;
-  content: '';
+  content: "";
   background: url(../images/common/ico_reservation01.png) no-repeat center/contain;
   width: 20px;
   height: 20px;
@@ -1098,7 +1102,7 @@ a:visited {
 .c-bg-grey02::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background: #f4f4f2;
   min-width: 325px;
   height: 100%;
@@ -1164,7 +1168,7 @@ a:visited {
   color: #998969;
   font-weight: bold;
   line-height: 1.5;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   font-size: 1rem;
 }
 
@@ -1207,7 +1211,7 @@ a:visited {
 .clinic-content .clinic-director__career-name {
   margin-bottom: 10px;
   line-height: 1.8;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   font-size: 1.2rem;
 }
 
@@ -1225,11 +1229,11 @@ a:visited {
   display: table;
   margin-right: 15px;
   word-break: keep-all;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .clinic-content .clinic-director__career-year dd {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .clinic-content .clinic-director-sec {
@@ -1241,7 +1245,7 @@ a:visited {
 .clinic-content .clinic-director-sec.c-bg-grey02::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background: #f4f4f2;
   min-width: 325px;
   height: 100%;
@@ -1254,7 +1258,7 @@ a:visited {
 .clinic-content .clinic-director-sec__head {
   margin-bottom: 15px;
   line-height: 1.6;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   font-size: 1.4rem;
   font-weight: 500;
 }
@@ -1272,7 +1276,7 @@ a:visited {
 .clinic-content .clinic-director-history__head {
   margin-bottom: 5px;
   color: #998969;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   font-size: 1.1rem;
   font-weight: normal;
 }
@@ -1283,7 +1287,7 @@ a:visited {
 
 .clinic-content .clinic-director-history__txt {
   margin-top: 20px;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
 
 .clinic-content .clinic-director-performance {
@@ -1312,13 +1316,13 @@ a:visited {
   padding-left: 10px;
   font-weight: bold;
   line-height: 1.65;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .clinic-content .clinic-director-performance .c-list01__item::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background: #ae9f80;
   border-radius: 50%;
   width: 5px;
@@ -1390,7 +1394,7 @@ a:visited {
 .clinic-content .clinic-equipment-list__head {
   margin-top: 8%;
   line-height: 1.5;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   font-size: 1.1rem;
 }
 
@@ -1450,12 +1454,12 @@ a:visited {
 .menu-about-sec__txtarea-head {
   margin-bottom: 15px;
   line-height: 1.6;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   font-size: 1rem;
 }
 
 .c-news {
-  padding: 150px 0 10vw 0;
+  padding: 30px 0 10vw 0;
   letter-spacing: 3px;
 }
 
@@ -1471,7 +1475,7 @@ a:visited {
 
 .c-news__link p {
   margin-top: 2vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__date {
@@ -1512,7 +1516,7 @@ a:visited {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -1572,7 +1576,7 @@ a:visited {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -1586,10 +1590,6 @@ a:visited {
   padding: 8vw 0;
 }
 
-.c-news-sl {
-  padding: 30vw 0 20vw 0;
-}
-
 .c-news-sl .c-container {
   padding: 5vw 5vw 0 5vw;
 }
@@ -1599,7 +1599,7 @@ a:visited {
 }
 
 .c-news-sl__list {
-  padding: 15vw 0 0 0;
+  padding: 5vw 0 0 0;
 }
 
 .c-news-sl__contents {
@@ -1608,13 +1608,13 @@ a:visited {
 }
 
 .c-news-sl__contents p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link {
   margin: 0 0 10vw 0;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link a {
@@ -1622,7 +1622,7 @@ a:visited {
 }
 
 .contents-recruit {
-  padding-top: 150px;
+  padding-top: 30px;
 }
 
 @media (max-width: 599px) {
@@ -1682,7 +1682,7 @@ a:visited {
 }
 
 .faq-contents .faq {
-  margin: 40vw 0 15vw 0;
+  margin: 5vw 0 15vw 0;
 }
 
 .faq-contents .faq .c-txtarea01 {
@@ -1704,7 +1704,7 @@ a:visited {
 }
 
 .faq-contents .faq dt::before {
-  content: 'Q';
+  content: "Q";
   position: absolute;
   top: 4vw;
   left: 0;
@@ -1724,7 +1724,7 @@ a:visited {
 }
 
 .faq-contents .faq dt span::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1736,8 +1736,8 @@ a:visited {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .faq-contents .faq dd {
@@ -1745,7 +1745,7 @@ a:visited {
 }
 
 .faq-contents .faq dd::before {
-  content: 'A';
+  content: "A";
   position: absolute;
   top: 1vw;
   left: 0;
@@ -3559,13 +3559,13 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     color: #424242;
   }
   .c-txt-sm {
-    font-size: .8rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     line-height: 2;
     color: #424242;
   }
   .c-txt-xs {
-    font-size: .7rem;
+    font-size: 0.7rem;
     letter-spacing: 2px;
     line-height: 2;
     color: #424242;
@@ -3626,7 +3626,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     position: absolute;
     top: 0;
     right: 0;
-    content: '';
+    content: "";
     display: block;
     background-color: #faf8f8;
     height: 110%;
@@ -3659,7 +3659,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     position: absolute;
     top: 0;
     left: 0;
-    content: '';
+    content: "";
     display: block;
     background-color: #faf8f8;
     height: 110%;
@@ -3680,7 +3680,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .p-promise__list__txtarea {
     height: 80px;
     margin-top: -6px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .p-guidance__item {
     width: 25%;
@@ -3948,7 +3948,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     width: 30.9%;
     border-bottom: none;
   }
-  .clinic-content .clinic-equipment-list__item:nth-child(3n+1) {
+  .clinic-content .clinic-equipment-list__item:nth-child(3n + 1) {
     margin-right: 2vw;
   }
   .clinic-content .clinic-equipment-list__item:nth-child(3n) {
@@ -4001,7 +4001,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     padding: 0 7vw;
   }
   .faq-contents .faq {
-    margin: 30vw 0 10vw 0;
+    margin: 10vw 0 10vw 0;
   }
   .faq-contents .faq__title {
     text-align: center;

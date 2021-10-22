@@ -8,6 +8,7 @@ body {
   font-family: "Cormorant Infant", serif;
   font-family: "Noto Serif JP", serif;
   letter-spacing: 1px;
+
   &.hidden {
     overflow: hidden;
   }
@@ -502,8 +503,8 @@ a:visited {
 .p-top {
   position: relative;
 
-  & .swiper-container {
-    height: 93vh;
+  & .swiper-slide {
+    height: 75vh;
   }
 }
 
@@ -658,43 +659,35 @@ a:visited {
     color: #fff;
 
     & .item01 {
-      background: url(/images/common/ico_guidance01.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance01.png) no-repeat center/contain;
     }
 
     & .item02 {
-      background: url(/images/common/ico_guidance02.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance02.png) no-repeat center/contain;
     }
 
     & .item03 {
-      background: url(/images/common/ico_guidance03.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance03.png) no-repeat center/contain;
     }
 
     & .item04 {
-      background: url(/images/common/ico_guidance04.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance04.png) no-repeat center/contain;
     }
 
     & .item05 {
-      background: url(/images/common/ico_guidance05.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance05.png) no-repeat center/contain;
     }
 
     & .item06 {
-      background: url(/images/common/ico_guidance06.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance06.png) no-repeat center/contain;
     }
 
     & .item07 {
-      background: url(/images/common/ico_guidance07.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance07.png) no-repeat center/contain;
     }
 
     & .item08 {
-      background: url(/images/common/ico_guidance08.png) no-repeat
-        center/contain;
+      background: url(/images/common/ico_guidance08.png) no-repeat center/contain;
     }
   }
 
@@ -1036,8 +1029,7 @@ a:visited {
           &::before {
             display: block;
             content: "";
-            background: url(../images/common/ico_reservation01.png) no-repeat
-              center/contain;
+            background: url(../images/common/ico_reservation01.png) no-repeat center/contain;
             width: 20px;
             height: 20px;
             margin-right: 5px;

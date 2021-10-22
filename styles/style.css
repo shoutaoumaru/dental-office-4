@@ -510,8 +510,8 @@ a:visited {
   position: relative;
 }
 
-.p-top .swiper-container {
-  height: 93vh;
+.p-top .swiper-slide {
+  height: 75vh;
 }
 
 .p-policy {

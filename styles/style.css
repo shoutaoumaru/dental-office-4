@@ -3402,7 +3402,7 @@ Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
   .c-txt-sm {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-txt-md {
     font-size: 1.4rem;
@@ -3488,7 +3488,7 @@ Stylesheet: 960px以上のモニタで適用
     padding: 5vw 0;
   }
   .p-footer__link {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .p-footer .ft-info__logo {
     width: 130px;
@@ -3532,7 +3532,7 @@ Stylesheet: 960px以上のモニタで適用
     height: 130%;
   }
   .clinic-content .clinic-director__img {
-    background: url(/images/clinic/pic_director01_pc.jpg);
+    background: url(/images/home/staff__1@pc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: none;

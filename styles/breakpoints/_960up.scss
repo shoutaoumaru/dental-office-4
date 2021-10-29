@@ -4,7 +4,7 @@ Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
 .c-txt-sm {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .c-txt-md {
@@ -67,7 +67,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//.p-policy 
+//.p-policy
 .p-policy {
   padding-bottom: 26vw;
 }
@@ -115,7 +115,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //.p-news
 .p-news {
-
   &__item {
     & a {
       padding: 4vw;
@@ -127,12 +126,12 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//.p-footer 
+//.p-footer
 .p-footer {
   padding: 5vw 0;
 
   &__link {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   & .ft-info__logo {
@@ -140,7 +139,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//* * * * * * * news-page * * * * * * *   
+//* * * * * * * news-page * * * * * * *
 .c-news {
   &__link {
     padding: 4vw;
@@ -152,7 +151,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-// * * * * * * * * * news-sl-page * * * * * * 
+// * * * * * * * * * news-sl-page * * * * * *
 .c-news-sl {
   padding: 10vw;
 
@@ -180,7 +179,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-// * * * * * * * * * about-page * * * * * * 
+// * * * * * * * * * about-page * * * * * *
 .about-policy {
   &-sec {
     & .title {
@@ -204,11 +203,11 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-// * * * * * * * * * clinic-page * * * * * * 
+// * * * * * * * * * clinic-page * * * * * *
 .clinic-content {
   .clinic-director {
     &__img {
-      background: url(/images/clinic/pic_director01_pc.jpg);
+      background: url(/images/home/staff__1@pc.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       max-width: none;
@@ -234,7 +233,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-// * * * * * * * * * menu-page * * * * * * 
+// * * * * * * * * * menu-page * * * * * *
 .menu-contents {
   .menu-about-sec {
     &__img {
@@ -243,7 +242,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-// * * * * * * * * * recruit-page * * * * * * 
+// * * * * * * * * * recruit-page * * * * * *
 .contents-recruit {
   & .recruit {
     &-message {
@@ -260,7 +259,6 @@ Stylesheet: 960px以上のモニタで適用
     &-subtitle {
       margin-bottom: 5vw;
     }
-
   }
 
   .c-table01 {

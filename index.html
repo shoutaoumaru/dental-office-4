@@ -1,502 +1,598 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>歯科テンプレート４</title>
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="styles/vendors/animsition.min.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>歯科テンプレート４</title>
-  <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
-  <link rel="stylesheet" href="styles/vendors/animsition.min.css">
-  <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-
-<body class="animsition">
-  <div id="main-wrapper" class="superwrapper">
-    <header id="header" class="p-header">
-      <div class="mobile-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo"></div>
-          </a>
+  <body class="animsition">
+    <div id="main-wrapper" class="superwrapper">
+      <header id="header" class="p-header">
+        <div class="mobile-container">
+          <div class="logo__img">
+            <a class="animsition-link" href="/">
+              <div class="logo"></div>
+            </a>
+          </div>
+          <div class="mobile-button">
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
-        <div class="mobile-button">
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+        <!-- /.mobile-container -->
+        <div class="pc-container">
+          <div class="logo__img">
+            <a class="animsition-link" href="/">
+              <div class="logo-pc logo"></div>
+            </a>
+          </div>
+          <nav class="pc-nav">
+            <ul class="pc-nav-list">
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/about/about.html"
+                  ><span>わたしたちについて</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a
+                  class="pc-nav-link animsition-link"
+                  href="/clinic/clinic.html"
+                  ><span>医院案内</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/menu/menu.html"
+                  ><span>診療案内</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/faq/faq.html"
+                  ><span>よくあるご質問</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/news/news.html"
+                  ><span>お知らせ</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a
+                  class="pc-nav-link animsition-link"
+                  href="/recruit/recruit.html"
+                  ><span>採用情報</span></a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <!-- /.mobile-container -->
-      <div class="pc-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo-pc logo"></div>
-          </a>
-        </div>
-        <nav class="pc-nav">
-          <ul class="pc-nav-list">
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/about/about.html"><span>わたしたちについて</span></a>
+        <!-- /.pc-container -->
+        <nav class="sp-navbtn">
+          <ul class="sp-navbtn__container">
+            <li>
+              <a class="tel" href="tel:092-686-7954"
+                >電話予約<i class="icon-tel"></i
+              ></a>
             </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/clinic/clinic.html"><span>医院案内</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/treatment/treatment.html"><span>診療案内</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link " href="/recruit/recruit.html"><span>採用情報</span></a>
+            <li>
+              <a class="net" target="_blank" href="https://haisha-yoyaku.jp/"
+                >オンライン予約<i class="icon-net"></i
+              ></a>
             </li>
           </ul>
         </nav>
-      </div>
-      <!-- /.pc-container -->
-      <nav class="sp-navbtn">
-        <ul class="sp-navbtn__container">
-          <li><a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a></li>
-          <li><a class="net" target="_blank" href="https://haisha-yoyaku.jp/">オンライン予約<i class="icon-net"></i></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.nav-btn -->
-    </header>
-    <!-- /.p-header -->
-    <div id="main-contents">
-      <section id="top" class="p-top">
-        <div class="hero">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="view-sp" src="images/home/clinic__1@sp.jpg" />
-                <img class="view-pc" src="images/home/clinic__1@pc.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img class="view-sp" src="images/home/medical__1@sp.jpg" />
-                <img class="view-pc" src="images/home/medical__1@pc.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img class="view-sp" src="images/home/reception@sp.jpg" />
-                <img class="view-pc" src="images/home/reception@pc.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.p-top -->
-      <section class="p-policy">
-        <div class="c-container">
-          <div class="p-policy-wrap appear up">
-            <div class="p-policy__img item">
-              <img class="parallax-up" src="/images/home/medical__4@pc.jpg">
-            </div>
-            <div class="p-policy-container">
-              <div class="p-policy__title clip-js left">
-                <h2 class="title">POLICY</h2>
-              </div>
-              <div class="p-policy__desc item">
-                <h3 class="subtitle">患者様の満足のために</h3>
-                <p class="c-txt-sm">
-                  私たちが何よりもまず目指すところは“患者様の満足のために”。<br>
-                  当院では<span class="c-line01">患者様の満足を一番に考えております。</span>患者様はさまざまな思いを抱えて来院されます。
-                </p>
-              </div>
-              <div class="p-policy__text item">
-                <p class="c-txt-sm">
-                  それらを解決するために治療技術の研鑽はもちろん、そのための環境を十分に整えてお待ちしております。その上で私たちがより大事にしているもの、それは痛くない、怖くない、通いやすいクリニックであることです。
-                </p>
-                <div class="p-policy__btn c-btn01">
-                  <a class="c-btn01__link animsition-link" href="/about/about.html">わたしたちについて</a>
+        <!-- /.nav-btn -->
+      </header>
+      <!-- /.p-header -->
+      <div id="main-contents">
+        <section id="top" class="p-top">
+          <div class="hero">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="view-sp" src="images/home/clinic__1@sp.jpg" />
+                  <img class="view-pc" src="images/home/clinic__1@pc.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="view-sp" src="images/home/medical__1@sp.jpg" />
+                  <img class="view-pc" src="images/home/medical__1@pc.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="view-sp" src="images/home/reception@sp.jpg" />
+                  <img class="view-pc" src="images/home/reception@pc.jpg" />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /.p-policy -->
-      <section class="p-message">
-        <div class="c-container">
-          <div class="p-message-wrap">
-            <div class="p-message__img appear up">
-              <img class="item" src="/images/home/staff__1@sp.jpg" alt="">
-              <div class="p-message__name item">
-                <p class="c-txt-md small">院長</p>
-                <p class="c-txt-md">利部 翔太</p>
+        </section>
+        <!-- /.p-top -->
+        <section class="p-policy">
+          <div class="c-container">
+            <div class="p-policy-wrap appear up">
+              <div class="p-policy__img item">
+                <img class="parallax-up" src="/images/home/medical__4@pc.jpg" />
+              </div>
+              <div class="p-policy-container">
+                <div class="p-policy__title clip-js left">
+                  <h2 class="title">POLICY</h2>
+                </div>
+                <div class="p-policy__desc item">
+                  <h3 class="subtitle">患者様の満足のために</h3>
+                  <p class="c-txt-sm">
+                    私たちが何よりもまず目指すところは“患者様の満足のために”。<br />
+                    当院では<span class="c-line01"
+                      >患者様の満足を一番に考えております。</span
+                    >患者様はさまざまな思いを抱えて来院されます。
+                  </p>
+                </div>
+                <div class="p-policy__text item">
+                  <p class="c-txt-sm">
+                    それらを解決するために治療技術の研鑽はもちろん、そのための環境を十分に整えてお待ちしております。その上で私たちがより大事にしているもの、それは痛くない、怖くない、通いやすいクリニックであることです。
+                  </p>
+                  <div class="p-policy__btn c-btn01">
+                    <a
+                      class="c-btn01__link animsition-link"
+                      href="/about/about.html"
+                      >わたしたちについて</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <section class="p-message-container appear up">
-              <h2 class="title clip-js left">
-                MESSAGE
-              </h2>
-              <p class="subtitle item"><span class="subtitle__black ">痛くない、怖くない、</span><br>
-                通いやすい医院を<br>
-                目指しています</p>
-              <p class="c-txt-sm item">
-                歯科治療とは多かれ少なかれ歯を削る治療がほとんどです。そして、削れば削るほど歯の寿命は短くなっていくのは事実です。<br>
-                治療が完了して長期メインテナンスに入っていけばまだしも、治療途中で中断してしまうとその歯の寿命は余計に縮まることになります。<br>
-                その多くが、治療自体の痛みや不快感を伴うことで、多くの場合“あそこの歯医者痛いしな…”と通院することがイヤになり、放置して症状が悪化して、また…と悪循環に陥ります。<br>
-                私たちはなるべく痛くなく、怖くない、通いやすい医院を目指しています。
-              </p>
-              <div class="p-message__btn c-btn01 item">
-                <a class="c-btn01__link animsition-link" href="/clinic/clinic.html">院長紹介</a>
-              </div>
-            </section>
           </div>
-        </div>
-      </section>
-      <!-- /.p-message -->
-      <section class="p-promise">
-        <div class="c-container">
-          <h2 class="p-promise__title clip-js left">当院の<span class="brown">3</span>つのお約束
-          </h2>
-          <p class="p-promise__cover  clip-js left">promise</p>
-          <ul class="p-promise__list appear up">
-            <li class="p-promise__list__item item">
-              <div class="p-promise__list__img"><img src="/images/home/treatment@pc.jpg" alt=""></div>
-              <div class="p-promise__list__txtarea">
-                <p class="p-promise__list__txt">痛みや不安に配慮した<br>快適な治療</p>
+        </section>
+        <!-- /.p-policy -->
+        <section class="p-message">
+          <div class="c-container">
+            <div class="p-message-wrap">
+              <div class="p-message__img appear up">
+                <img class="item" src="/images/home/staff__1@sp.jpg" alt="" />
+                <div class="p-message__name item">
+                  <p class="c-txt-md small">院長</p>
+                  <p class="c-txt-md">利部 翔太</p>
+                </div>
               </div>
+              <section class="p-message-container appear up">
+                <h2 class="title clip-js left">MESSAGE</h2>
+                <p class="subtitle item">
+                  <span class="subtitle__black">痛くない、怖くない、</span
+                  ><br />
+                  通いやすい医院を<br />
+                  目指しています
+                </p>
+                <p class="c-txt-sm item">
+                  歯科治療とは多かれ少なかれ歯を削る治療がほとんどです。そして、削れば削るほど歯の寿命は短くなっていくのは事実です。<br />
+                  治療が完了して長期メインテナンスに入っていけばまだしも、治療途中で中断してしまうとその歯の寿命は余計に縮まることになります。<br />
+                  その多くが、治療自体の痛みや不快感を伴うことで、多くの場合“あそこの歯医者痛いしな…”と通院することがイヤになり、放置して症状が悪化して、また…と悪循環に陥ります。<br />
+                  私たちはなるべく痛くなく、怖くない、通いやすい医院を目指しています。
+                </p>
+                <div class="p-message__btn c-btn01 item">
+                  <a
+                    class="c-btn01__link animsition-link"
+                    href="/clinic/clinic.html"
+                    >院長紹介</a
+                  >
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <!-- /.p-message -->
+        <section class="p-promise">
+          <div class="c-container">
+            <h2 class="p-promise__title clip-js left">
+              当院の<span class="brown">3</span>つのお約束
+            </h2>
+            <p class="p-promise__cover clip-js left">promise</p>
+            <ul class="p-promise__list appear up">
+              <li class="p-promise__list__item item">
+                <div class="p-promise__list__img">
+                  <img src="/images/home/treatment@pc.jpg" alt="" />
+                </div>
+                <div class="p-promise__list__txtarea">
+                  <p class="p-promise__list__txt">
+                    痛みや不安に配慮した<br />快適な治療
+                  </p>
+                </div>
+              </li>
+              <li class="p-promise__list__item item">
+                <div class="p-promise__list__img">
+                  <img src="/images/home/tool3.jpg" alt="" />
+                </div>
+                <div class="p-promise__list__txtarea">
+                  <p class="p-promise__list__txt">最高峰の<br />技術と環境</p>
+                </div>
+              </li>
+              <li class="p-promise__list__item item">
+                <div class="p-promise__list__img">
+                  <img src="/images/home/reception@pc.jpg" alt="" />
+                </div>
+                <div class="p-promise__list__txtarea">
+                  <p class="p-promise__list__txt">
+                    心地の良い応対と<br />とびきりの笑顔
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- /.p-promise -->
+        <section class="p-guidance">
+          <div class="c-container">
+            <div class="c-head03">
+              <h2 class="p-guidance__title clip-js left">INFORMATION</h2>
+              <h3 class="p-guidance__subtitle clip-js left">診察案内</h3>
+            </div>
+            <div class="p-guidance__wrap appear up">
+              <ul class="p-guidance__list item">
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item01"></div>
+                  <p class="p-guidance__txt">一般歯科</p>
+                </li>
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item02"></div>
+                  <p class="p-guidance__txt">小児歯科</p>
+                </li>
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item03"></div>
+                  <p class="p-guidance__txt">予防歯科</p>
+                </li>
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item04"></div>
+                  <p class="p-guidance__txt">ホワイトニング</p>
+                </li>
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item05"></div>
+                  <p class="p-guidance__txt">セラミック治療</p>
+                </li>
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item06"></div>
+                  <p class="p-guidance__txt">インプラント</p>
+                </li>
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item07"></div>
+                  <p class="p-guidance__txt">根管治療</p>
+                </li>
+                <li class="p-guidance__item">
+                  <div class="p-guidance__ico item08"></div>
+                  <p class="p-guidance__txt">マウスピース矯正</p>
+                </li>
+              </ul>
+              <div class="p-guidance__btn c-btn01 item">
+                <a class="c-btn01__link animsition-link" href="/menu/menu.html"
+                  >診察案内</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /.p-guidance -->
+        <section id="gallery" class="p-gallery">
+          <div class="c-container">
+            <h2 class="p-gallery__title clip-js left">GALLERY</h2>
+            <div class="p-gallery__slider hero">
+              <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide second">
+                    <img src="images/home/room@pc.jpg" />
+                  </div>
+                  <div class="swiper-slide second">
+                    <img src="images/home/kid-room.jpg" />
+                  </div>
+                  <div class="swiper-slide second">
+                    <img src="images/home/ct.jpg" />
+                  </div>
+                  <div class="swiper-slide second">
+                    <img src="images/home/toilet.jpg" />
+                  </div>
+                  <div class="swiper-slide second">
+                    <img src="images/home/rentogen.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /.p-gallery -->
+        <section id="recruit" class="p-recruit">
+          <div class="c-container">
+            <div class="p-recruit__wrap appear up">
+              <div class="p-recruit__txtarea item">
+                <div class="c-head02">
+                  <h2 class="title clip-js left">RECRUIT</h2>
+                  <p class="subtitle">
+                    <span
+                      >地域社会のために、<br />そしてスタッフのために。</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="p-recruit__btn c-btn01 item">
+                <a
+                  class="c-btn01__link animsition-link"
+                  href="/recruit/recruit.html"
+                  >採用情報</a
+                >
+              </div>
+            </div>
+            <div class="p-recruit__left clip-js1 left">
+              <img src="images/home/tool3.jpg" alt="" />
+            </div>
+            <div class="p-recruit__right">
+              <img
+                class="parallax-down"
+                src="images/home/store__2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <!-- /.p-recruit -->
+        <section id="access" class="p-access">
+          <div class="c-container">
+            <h2 class="p-access__title clip-js left">
+              <p class="title">ACCESS</p>
+            </h2>
+            <div class="p-access-container appear up">
+              <div class="p-access-wrap item">
+                <h3 class="p-access-txt">
+                  <p class="c-txt-sm">医院案内</p>
+                </h3>
+                <h4 class="p-access__name">RivRoundデンタルクリニック</h4>
+                <div class="p-access__info">
+                  <ul class="p-access__list">
+                    <li class="p-access__item">
+                      <p>住所</p>
+                      <p>〒812-0011</p>
+                      <p>福岡市博多区博多駅前 3-37-25第二岡部ビル９階</p>
+                    </li>
+                    <li class="p-access__item">
+                      <p>アクセス</p>
+                      <p>博多駅博多口徒歩４分</p>
+                    </li>
+                    <li class="p-access__item">
+                      <a class="p-access__tel" href="tel:092-686-8008">
+                        <p>電話番号</p>
+                        <p>092-686-8008</p>
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="p-access__item">
+                      <p>診療科目</p>
+                      <p>歯科 / 矯正歯科</p>
+                    </li>
+                    <li class="p-access__item">
+                      <a
+                        class="p-access__g-map"
+                        href="https://goo.gl/maps/Ba1o85CQRCXAnAMb9"
+                        target="_blank"
+                        >Google Map</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-access__time item">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>診療時間</th>
+                      <th>月</th>
+                      <th>火</th>
+                      <th>水</th>
+                      <th>木</th>
+                      <th>金</th>
+                      <th>土</th>
+                      <th>日・<br />祝日</th>
+                    </tr>
+                    <tr>
+                      <td>9:00〜13:00</td>
+                      <td>◯</td>
+                      <td>◯</td>
+                      <td class="close">／</td>
+                      <td>◯</td>
+                      <td>◯</td>
+                      <td>◯</td>
+                      <td class="close">／</td>
+                    </tr>
+                    <tr>
+                      <td>14:00〜18:00</td>
+                      <td>◯</td>
+                      <td>◯</td>
+                      <td class="close">／</td>
+                      <td>◯</td>
+                      <td>◯</td>
+                      <td>◯</td>
+                      <td class="close">／</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /.p-access -->
+        <section id="news" class="p-news">
+          <div class="c-container">
+            <div class="p-news__wrap appear up">
+              <h2 class="p-news__title clip-js left">
+                <span class="title">NEWS</span>
+                <p class="ja">
+                  <a
+                    class="p-news__home-link animsition-link"
+                    href="/news/news.html"
+                    >お知らせ一覧</a
+                  >
+                </p>
+              </h2>
+              <ul class="p-news__block item">
+                <li class="p-news__item">
+                  <a class="p-news__link" href="/news/news-single.html">
+                    <p class="p-news__date">2021.04.24</p>
+                    <p class="c-txt-sm">歯周病について</p>
+                  </a>
+                </li>
+                <li class="p-news__item">
+                  <a class="p-news__link" href="/news/news-single.html">
+                    <p class="p-news__date">2021.04.05</p>
+                    <p class="c-txt-sm">ホームページリニューアルについて</p>
+                  </a>
+                </li>
+                <li class="p-news__item">
+                  <a class="p-news__link" href="/news/news-single.html">
+                    <p class="p-news__date">2021.03.13</p>
+                    <p class="c-txt-sm">新型コロナウィルスについて</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- /.p-news -->
+        <footer class="p-footer">
+          <div class="p-footer__wrap">
+            <div class="p-footer__block">
+              <ul class="p-footer__list">
+                <li class="p-footer__item">
+                  <a
+                    class="p-footer__link animsition-link"
+                    href="/about/about.html"
+                    >わたしたちについて</a
+                  >
+                </li>
+                <li class="p-footer__item">
+                  <a
+                    class="p-footer__link animsition-link"
+                    href="/clinic/clinic.html"
+                    >医院紹介</a
+                  >
+                </li>
+                <li class="p-footer__item">
+                  <a
+                    class="p-footer__link animsition-link"
+                    href="/menu/menu.html"
+                    >診療案内</a
+                  >
+                </li>
+                <li class="p-footer__item">
+                  <a
+                    class="p-footer__link animsition-link"
+                    href="/news/news.html"
+                    >お知らせ</a
+                  >
+                </li>
+                <li class="p-footer__item">
+                  <a class="p-footer__link animsition-link" href="/faq/faq.html"
+                    >よくあるご質問</a
+                  >
+                </li>
+                <li class="p-footer__item">
+                  <a
+                    class="p-footer__link animsition-link"
+                    href="/recruit/recruit.html"
+                    >採用情報</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="ft-info">
+              <div class="ft-info__wrap">
+                <div class="ft-info__btns">
+                  <p class="ft-info__reservation c-btn03">
+                    <a
+                      class="c-btn03__link"
+                      href="https://doctorsfile.jp/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span class="c-btn03__txt u-serif">WEB予約</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="ft-info__logos">
+                <div class="ft-info__logo">
+                  <img
+                    src="/images/common/riv_logo_official2.png"
+                    alt="rivround"
+                  />
+                </div>
+                <p class="ft-cr">
+                  <small class="ft-cr__txt">© Riv Round</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- /.p-footer -->
+      </div>
+      <!-- /#main-contetnts -->
+      <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/about/about.html"
+                >わたしたちについて</a
+              >
             </li>
-            <li class="p-promise__list__item item">
-              <div class="p-promise__list__img"><img src="/images/home/tool3.jpg" alt=""></div>
-              <div class="p-promise__list__txtarea">
-                <p class="p-promise__list__txt">最高峰の<br>技術と環境</p>
-              </div>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/menu/menu.html">診療案内</a>
             </li>
-            <li class="p-promise__list__item item">
-              <div class="p-promise__list__img"><img src="/images/home/reception@pc.jpg" alt=""></div>
-              <div class="p-promise__list__txtarea">
-                <p class="p-promise__list__txt">心地の良い応対と<br>とびきりの笑顔</p>
-              </div>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/clinic/clinic.html">医院紹介</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/news/news.html">お知らせ</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/recruit/recruit.html"
+                >採用情報</a
+              >
             </li>
           </ul>
-        </div>
-      </section>
-      <!-- /.p-promise -->
-      <section class="p-guidance">
-        <div class="c-container">
-          <div class="c-head03">
-            <h2 class="p-guidance__title clip-js left">
-              INFORMATION
-            </h2>
-            <h3 class="p-guidance__subtitle  clip-js left">診察案内</h3>
-          </div>
-          <div class="p-guidance__wrap appear up">
-            <ul class="p-guidance__list item">
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item01"></div>
-                <p class="p-guidance__txt">一般歯科</p>
-              </li>
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item02"></div>
-                <p class="p-guidance__txt">小児歯科</p>
-              </li>
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item03"></div>
-                <p class="p-guidance__txt">予防歯科</p>
-              </li>
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item04"></div>
-                <p class="p-guidance__txt">ホワイトニング</p>
-              </li>
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item05"></div>
-                <p class="p-guidance__txt">セラミック治療</p>
-              </li>
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item06"></div>
-                <p class="p-guidance__txt">インプラント</p>
-              </li>
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item07"></div>
-                <p class="p-guidance__txt">根管治療</p>
-              </li>
-              <li class="p-guidance__item ">
-                <div class="p-guidance__ico item08"></div>
-                <p class="p-guidance__txt">マウスピース矯正</p>
-              </li>
-            </ul>
-            <div class="p-guidance__btn c-btn01 item">
-              <a class="c-btn01__link animsition-link" href="/menu/menu.html">診察案内</a>
+          <div class="reserve-btn-wrap">
+            <div class="reserve-btn-tel">
+              <h4>電話予約はこちら</h4>
+              <div class="reserve-btn">
+                <a href="tel:092-686-7954"><span>092-686-7954</span></a>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.p-guidance -->
-      <section id="gallery" class="p-gallery">
-        <div class="c-container">
-          <h2 class="p-gallery__title clip-js left">
-            GALLERY
-          </h2>
-          <div class="p-gallery__slider hero">
-            <div class="swiper-container2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide second">
-                  <img src="images/home/room@pc.jpg" />
-                </div>
-                <div class="swiper-slide second">
-                  <img src="images/home/kid-room.jpg" />
-                </div>
-                <div class="swiper-slide second">
-                  <img src="images/home/ct.jpg" />
-                </div>
-                <div class="swiper-slide second">
-                  <img src="images/home/toilet.jpg" />
-                </div>
-                <div class="swiper-slide second">
-                  <img src="images/home/rentogen.jpg" />
-                </div>
+            <div class="reserve-btn-net">
+              <h4>ネット予約はこちら</h4>
+              <div class="reserve-btn">
+                <a href="https://doctorsfile.jp/" target="_blank"
+                  ><span>ONLINE RESERVE</span></a
+                >
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /.p-gallery -->
-      <section id="recruit" class="p-recruit">
-        <div class="c-container">
-          <div class="p-recruit__wrap appear up">
-            <div class="p-recruit__txtarea item">
-              <div class="c-head02">
-                <h2 class="title clip-js left">
-                  RECRUIT
-                </h2>
-                <p class="subtitle"><span>地域社会のために、<br>そしてスタッフのために。</span>
-                </p>
-              </div>
-            </div>
-            <div class="p-recruit__btn c-btn01 item">
-              <a class="c-btn01__link animsition-link" href="/recruit/recruit.html">採用情報</a>
-            </div>
-          </div>
-          <div class="p-recruit__left clip-js1 left">
-            <img src="images/home/tool3.jpg" alt="">
-          </div>
-          <div class="p-recruit__right">
-            <img class="parallax-down" src="images/home/store__2.jpg" alt="">
-          </div>
-        </div>
-      </section>
-      <!-- /.p-recruit -->
-      <section id="access" class="p-access">
-        <div class="c-container">
-          <h2 class="p-access__title clip-js left">
-            <p class="title">ACCESS</p>
-          </h2>
-          <div class="p-access-container appear up">
-            <div class="p-access-wrap item">
-              <h3 class="p-access-txt">
-                <p class="c-txt-sm">医院案内</p>
-              </h3>
-              <h4 class="p-access__name">
-                RivRoundデンタルクリニック
-              </h4>
-              <div class="p-access__info">
-                <ul class="p-access__list">
-                  <li class="p-access__item">
-                    <p>住所</p>
-                    <p>〒812-0011</p>
-                    <p>福岡市博多区博多駅前 3-37-25第二岡部ビル９階</p>
-                  </li>
-                  <li class="p-access__item">
-                    <p>アクセス</p>
-                    <p>博多駅博多口徒歩４分</p>
-                  </li>
-                  <li class="p-access__item">
-                    <a class="p-access__tel" href="tel:092-686-8008">
-                      <p>電話番号</p>
-                      <p>092-686-8008</p>
-                      <p></p>
-                    </a>
-                  </li>
-                  <li class="p-access__item">
-                    <p>診療科目</p>
-                    <p>歯科 / 矯正歯科</p>
-                  </li>
-                  <li class="p-access__item">
-                    <a class="p-access__g-map" href="https://goo.gl/maps/Ba1o85CQRCXAnAMb9" target="_blank">Google
-                      Map</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p-access__time item">
-              <table>
-                <tbody>
-                  <tr>
-                    <th>診療時間</th>
-                    <th>月</th>
-                    <th>火</th>
-                    <th>水</th>
-                    <th>木</th>
-                    <th>金</th>
-                    <th>土</th>
-                    <th>日・<br>祝日</th>
-                  </tr>
-                  <tr>
-                    <td>9:00〜13:00</td>
-                    <td>◯</td>
-                    <td>◯</td>
-                    <td class="close">／</td>
-                    <td>◯</td>
-                    <td>◯</td>
-                    <td>◯</td>
-                    <td class="close">／</td>
-                  </tr>
-                  <tr>
-                    <td>14:00〜18:00</td>
-                    <td>◯</td>
-                    <td>◯</td>
-                    <td class="close">／</td>
-                    <td>◯</td>
-                    <td>◯</td>
-                    <td>◯</td>
-                    <td class="close">／</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.p-access -->
-      <section id="news" class="p-news">
-        <div class="c-container">
-          <div class="p-news__wrap appear up">
-            <h2 class="p-news__title clip-js left">
-              <span class="title">NEWS</span>
-              <p class="ja">
-                <a class="p-news__home-link animsition-link" href="/news/news.html">お知らせ一覧</a>
-              </p>
-            </h2>
-            <ul class="p-news__block item">
-              <li class="p-news__item ">
-                <a class="p-news__link" href="/news/news-single.html">
-                  <p class="p-news__date">2021.04.24</p>
-                  <p class="c-txt-sm">歯周病について</p>
-                </a>
-              </li>
-              <li class="p-news__item ">
-                <a class="p-news__link" href="/news/news-single.html">
-                  <p class="p-news__date">2021.04.05</p>
-                  <p class="c-txt-sm">ホームページリニューアルについて</p>
-                </a>
-              </li>
-              <li class="p-news__item ">
-                <a class="p-news__link" href="/news/news-single.html">
-                  <p class="p-news__date">2021.03.13</p>
-                  <p class="c-txt-sm">新型コロナウィルスについて</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- /.p-news -->
-      <footer class="p-footer">
-        <div class="p-footer__wrap">
-          <div class="p-footer__block">
-            <ul class="p-footer__list">
-              <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/about/about.html">わたしたちについて</a>
-              </li>
-              <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/clinic/clinic.html">医院紹介</a>
-              </li>
-              <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/menu/menu.html">診療案内</a>
-              </li>
-              <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/news/news.html">お知らせ</a>
-              </li>
-              <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/faq/faq.html">よくあるご質問</a>
-              </li>
-              <li class="p-footer__item">
-                <a class="p-footer__link animsition-link" href="/recruit/recruit.html">採用情報</a>
-              </li>
-            </ul>
-          </div>
-          <div class="ft-info">
-            <div class="ft-info__wrap">
-              <div class="ft-info__btns">
-                <p class="ft-info__reservation c-btn03 ">
-                  <a class="c-btn03__link" href="https://doctorsfile.jp/" target="_blank" rel="noopener noreferrer">
-                    <span class="c-btn03__txt u-serif">WEB予約</span>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div class="ft-info__logos">
-              <div class="ft-info__logo"><img src="/images/common/riv_logo_official2.png" alt="rivround"></div>
-              <p class="ft-cr"><small class="ft-cr__txt">© Riv Round</small></p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- /.p-footer -->
+        </nav>
+      </div>
+      <!-- /.mobile-menu -->
     </div>
-    <!-- /#main-contetnts -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/about/about.html">わたしたちについて</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/menu.html">診療案内</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/clinic/clinic.html">医院紹介</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">お知らせ</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
-          </li>
-        </ul>
-        <div class="reserve-btn-wrap">
-          <div class="reserve-btn-tel">
-            <h4>電話予約はこちら</h4>
-            <div class="reserve-btn">
-              <a href="tel:092-686-7954"><span>092-686-7954</span></a>
-            </div>
-          </div>
-          <div class="reserve-btn-net">
-            <h4>ネット予約はこちら</h4>
-            <div class="reserve-btn">
-              <a href="https://doctorsfile.jp/" target="_blank"><span>ONLINE RESERVE</span></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- /.mobile-menu -->
-  </div>
-  <!-- /.superwrapper -->
-  <!-- <script src="scripts/vendors/pace.js"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="scripts/vendors/animsition.min.js"></script>
-  <script src="scripts/vendors/swiper.min.js"></script>
-  <script src="scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="scripts/libs/scroll.js"></script>
-  <script src="/scripts/vendors/simpleParallax.min.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="scripts/libs/mobile-menu.js"></script>
-  <script src="scripts/main.js"></script>
-</body>
-
+    <!-- /.superwrapper -->
+    <!-- <script src="scripts/vendors/pace.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/vendors/animsition.min.js"></script>
+    <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script>
+    <script src="/scripts/libs/scroll-btn.js"></script>
+    <script src="/scripts/libs/page.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="/scripts/vendors/simpleParallax.min.js"></script>
+    <script src="/scripts/libs/parallax.js"></script>
+    <script src="/scripts/libs/text-animation.js"></script>
+    <script src="scripts/libs/mobile-menu.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
